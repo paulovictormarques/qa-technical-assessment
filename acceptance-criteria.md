@@ -64,3 +64,22 @@ Dado que um produto foi adicionado ao carrinho
 Quando acessar o carrinho
 Então deverá visualizar o produto adicionado
 </gerkhin>
+
+História 4 - Carrinho vazio
+Como cliente da loja
+Quero ser avisado que meu carrinho está vazio ao tentar avançar para checkout
+Para saber que o produto não está no carrinho e a compra não será concluída
+
+Cenário 1: carrinho vazio e clique em checkout
+<gerkhin>
+Dado que o produto foi removido do carrinho
+Quando clicar em checkout
+Então o sistema deve dar mensagem de erro e não avançar
+</gerkhin>
+
+Cenário 2: finalizar compra sem produto
+<gerkhin>
+Dado que na página de concluir pedido não existem produtos na cesta
+Quando clicar em concluir compra
+Então o cliente deve ser avisado que não há produtos para compra
+</gerkhin>
