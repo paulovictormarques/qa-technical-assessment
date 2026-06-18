@@ -28,3 +28,9 @@ ou
 
 npx cypress run
 
+## CI/CD
+
+Este projeto utiliza GitHub Actions para execução automática dos testes Cypress.
+
+Os testes são executados a cada push e pull request.
+
